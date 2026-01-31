@@ -87,6 +87,7 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: |
           mvn clean verify sonar:sonar \
-            -Dsonar.projectKey=michael-winson-se \
+            -Dsonar.projectKey=michael-winson-se_epat-git \
+            -Dsonar.organization=michael-winson-se \
             -Dsonar.host.url=$SONAR_HOST_URL \
             -Dsonar.login=$SONAR_TOKEN
