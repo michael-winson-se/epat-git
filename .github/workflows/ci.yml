@@ -26,7 +26,7 @@ jobs:
         run: ./mvnw test
 
       - name: Snyk Scan
-        uses: snyk/actions/maven@v2
+        uses: snyk/actions/maven@master
         continue-on-error: true
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
